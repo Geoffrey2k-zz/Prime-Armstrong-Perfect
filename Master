@@ -1,0 +1,54 @@
+#include <stdio.h>
+
+int prime(int);
+int armstrong(int);
+int perfect(int);
+
+int main()
+{
+int n;
+
+printf("Enter The Number To check \n ");
+scanf("%d",&n);
+
+if(prime(n) == 1)
+   printf("The Number Is A Prime Number");
+else
+    printf("The Number Is Not A Prime Number");
+/*if{
+   (armstrong(n) == 1);
+    printf("The Number Is A Armstrong Number");
+else 
+    printf("The Number Is Not An Armstrong Number");
+  }
+if{
+   (perfect(n) == 1);
+    printf("The Number Is A Perfect Number");
+else 
+    printf("The Number Is Not A Perfect Number");
+  }
+*/
+return 0;
+
+}
+
+int prime(int n)
+{
+int i,j;
+
+for(i=2;i<=n-1;i++)
+   {
+    if(n%i==0)
+       {
+        j=1;
+       }
+    }
+if(j==0)
+  {
+   return 1;
+  }
+   else
+       {
+        return 0;
+       }
+}
